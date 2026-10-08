@@ -7,6 +7,7 @@ import Countdown from './sections/Countdown'
 import Schedule from './sections/Schedule'
 import Location from './sections/Location'
 import DressCode from './sections/DressCode'
+import Kids from './sections/Kids'
 import Credits from './sections/Credits'
 import Footer from './sections/Footer'
 import MusicPlayer from './components/MusicPlayer'
@@ -47,6 +48,7 @@ export default function App() {
     <Countdown key="count" />,
     <Schedule key="sched" />,
     <DressCode key="dress" />,
+    <Kids key="kids" />,
     <Location key="loc" />,
     <Credits key="credits" />,
     <Footer key="foot" />
@@ -110,9 +112,10 @@ export default function App() {
     if (page === 2) return '/WhatsApp Audio 2026-10-06 at 12.07.53 PM.mpeg' // Countdown (Timer)
     if (page === 3) return '/WhatsApp Audio 2026-10-07 at 2.15.53 PM.mpeg' // Schedule
     if (page === 4) return '/WhatsApp Audio 2026-10-06 at 4.32.53 PM.mpeg' // DressCode
-    if (page === 5) return '/WhatsApp Audio 2026-10-06 at 4.34.05 PM.mpeg' // Location
-    if (page === 6) return '/WhatsApp Audio 2026-10-06 at 12.11.39 PM.mpeg' // Credits
-    if (page === 7) return '/WhatsApp Audio 2026-10-06 at 4.36.00 PM.mpeg' // Footer
+    if (page === 5) return '/WhatsApp Audio 2026-10-06 at 4.32.53 PM.mpeg' // Kids (reusing same music as requested)
+    if (page === 6) return '/WhatsApp Audio 2026-10-06 at 4.34.05 PM.mpeg' // Location
+    if (page === 7) return '/WhatsApp Audio 2026-10-06 at 12.11.39 PM.mpeg' // Credits
+    if (page === 8) return '/WhatsApp Audio 2026-10-06 at 4.36.00 PM.mpeg' // Footer
     return '/music.mp4' // Fallback
   }
 
